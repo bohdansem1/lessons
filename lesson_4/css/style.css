@@ -1,0 +1,49 @@
+@import url(reset.css);
+
+*{
+   color: rgb(77, 69, 69);
+}
+
+mark{
+   color:rgb(0, 64, 255);
+}
+
+.list a{
+   color: rgb(176, 2, 176);
+}
+
+div h2{
+   color: yellowgreen;
+}
+
+#up {
+   color: rgb(176, 2, 176);
+}
+
+[target*="_blank"] {
+   color: rgb(13, 255, 0);
+}
+
+.intro.introduction p{
+   color: rgb(252, 2, 2);
+}
+
+div.txt ul li{
+   color: rgb(0, 0, 0);
+}
+
+.txt .paragraph {
+   color:rgb(13, 255, 0)
+}
+
+.what-it-is .txt *{
+   color:rgb(255, 146, 13);
+}
+
+.txt>p {
+   color: rgb(0, 255, 225);
+}
+
+.paragraph+p {
+   color: rgb(159, 33, 161);
+}
