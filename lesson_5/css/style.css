@@ -1,0 +1,97 @@
+@import url(reset.css);
+@import url(fonts.css);
+
+@import url("https://fonts.googleapis.com/css?family=Inter:regular,500,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins:regular,600,700&display=swap");
+
+body {
+   text-align: center;
+   font-family: "Open Sans", serif;
+   font-size: 18px;
+   font-weight: 500;
+}
+.fonts-title{
+   text-align: center;
+   font-weight: 700;
+   font-size: 35px;
+   line-height: 1.5;
+}
+ul.menu-list{
+   line-height: 1.25;
+   text-align: center;
+   font-style: italic;
+   text-decoration: underline;
+}
+
+.intro ul{
+   line-height: 1.3;
+   font-style: oblique;
+   text-decoration: line-through;
+}
+
+.intro h2{
+   color: rgba(0, 0, 0, 1);
+}
+div p, div ul {
+   text-align: left;
+}
+
+.fonts1 h2{
+   text-decoration: overline;
+   text-transform: uppercase;
+} 
+
+h1{
+   text-shadow: 2px 2px 2px #000000ac;
+}
+
+#capitalize{
+   text-indent: 30px;
+   text-transform: capitalize;
+   letter-spacing: 5px;
+}
+
+.fonts5 p{
+   word-spacing: -4px;
+   line-height: 0.85;
+}
+.figma-page1, .figma-page2{
+   color: #7D7D7D;
+   text-align: left;
+   font-family: Inter;
+   font-size: 18px;
+   font-weight: 400;
+   line-height: 1.46;
+}
+.figma-title{
+   font-family: Poppins;
+   color: #37393F;
+   font-size: 30px;
+   font-weight: 600;
+   line-height: 1.27;
+}
+
+.figma-subtitle{
+   color: #6B77E5;
+   font-family: Poppins;
+   font-size: 20px;
+   font-weight: 600;
+   line-height: 1.27;
+}
+
+.figma-page2 h2{
+   font-weight: 700;
+   font-size: 40px;
+}
+
+.figma-page2 ul, .figma-page2 ol {
+   font-weight: 500;
+   text-indent: 16px;
+  
+}
+.figma-page2 ul li {
+   list-style: inside;
+}
+footer {
+   text-align: left;
+}
