@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:600&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Inter:regular&display=swap");
+@import url("https://fonts.googleapis.com/css?family=DM+Serif+Text:regular&display=swap");
+@import url(reset.css);
+
+body p{
+   color: #7D7D7D;
+   font-family: Inter;
+   font-size: 18px;
+   font-weight: 400;
+   line-height: 1.46;
+}
+.title {
+   color: #37393F;
+   font-family: Poppins;
+   font-size: 30px;
+   font-weight: 600;
+   line-height: 1.27;
+}
+.subtitle{
+   color: #6B77E5;
+   font-family: Poppins;
+   font-size: 20px;
+   font-weight: 600;
+   line-height: 1.27; 
+}
+.block1{
+   max-width: 692px;
+   margin: 0 auto 100px;
+}
+
+.main-pic{
+   width: 100%;
+   margin-bottom: 37px;
+}
+.block1 > .title{
+   margin-bottom: 3px;
+}
+
+.title + .descr{
+   margin-bottom: 42px;
+}
+
+.descr + .subtitle {
+   margin-bottom: 12px;
+}
+
+.subtitle + .descr{
+   margin-bottom: 40px;
+}
+
+.benefits-txt{
+   max-width: 332px;
+   display: inline-block;
+   padding-left: 29px;
+}
+
+.benefits-txt .title {
+   margin-bottom: 15px;
+}
+
+.benefits-txt .subtitle{
+   margin-bottom: 21px;
+   color: #40DDB6;
+
+}
+
+.benefits-txt li {
+   color: #7D7D7D;
+   font-family: Inter;
+   font-size: 18px;
+   font-weight: 400;
+   line-height: normal;
+   margin-bottom: 35px;
+}
+
+.benefits-txt li:last-child{
+   margin-bottom: 0;
+}
+
+/* second block styles */
+
+.block2{
+   max-width: 1169px;
+   max-height: 518px;
+   margin: 0 auto 100px;
+}
+
+.txt{
+   max-width: 563px;
+   display: inline-block;
+   padding: 21px 0;
+   margin-right: 38px;
+  }
+
+.txt p{
+   color: #474747;
+   font-family: Inter;
+   font-size: 20px;
+   font-weight: 400;
+   line-height: 1.8;
+}
+
+p.intro{
+   color: #D06B00;
+   font-size: 28px;
+   line-height: normal;
+   margin-bottom: 13px;
+}
+
+.txt h2{
+   color: #0E333D;
+   font-family: DM Serif Text;
+   font-size: 59px;
+   font-weight: 400;
+   line-height: 1.47;
+   margin-bottom: 25px;
+}
+
+#first-pic{
+   margin-right: 14px;
+}
+
+.header, .footer{
+   padding: 20px;
+   text-align: center;
+   background-color: #ff9036;
+}
+
+
+
+/* practice */
+
+.practice{
+   max-width: 1160px;
+   margin: 0 auto;
+}
+
+.example{
+   width: 50%;
+   margin: 100px 0 0 -70px;
+}
+
+.block3 p{
+   background-color: #840000;
+   max-width: 500px;
+   min-width: 200px;
+   padding: 40px 50px ;
+   display: inline-block;
+   min-height: 200px;
+   max-height: 300px;
+   overflow: auto;
+}
+
