@@ -8,6 +8,15 @@
    font-style: normal;
 }
 @font-face {
+   font-family: 'Core Sans C';
+   src: 
+      url('../fonts/CoreSansC-85Heavy.woff2') format('woff2'),
+      url('../fonts/CoreSansC-85Heavy.woff') format('woff');
+   font-display: swap;
+   font-weight: 800;
+   font-style: normal;
+}
+@font-face {
       font-family: 'Causten';
       src: 
       url('../fonts/Causten-Regular.woff2') format('woff2'),
