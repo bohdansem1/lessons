@@ -160,11 +160,11 @@ h2{
 }
 
 .experience{
-   background: url("../img/experience.jpg") no-repeat 32px 31px;
+   background: url("../img/experience.jpg") no-repeat 32px 31px / 42px;
 }
 
 .awards{
-   background: url("../img/awards.jpg") no-repeat 37px 31px;
+   background: url("../img/awards.jpg") no-repeat 37px 31px / 42px;
 }
 
 .advantages{
@@ -240,7 +240,7 @@ h2{
    font-weight: 400;
    line-height: 1.46;
    padding-left: 25px;
-   background: url("../img/date.jpg") left no-repeat;
+   background: url("../img/date.jpg") no-repeat left / 22px;
 }
 
 .card .pic1{background: url("../img/card1.jpg") 0 0 / contain no-repeat;}
