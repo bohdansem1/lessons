@@ -1,0 +1,386 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:regular,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Inter:regular,500&display=swap");
+@import url(fonts.css);
+@import url(reset.css);
+
+
+header, footer{
+   text-align: center;
+   font-size: 35px;
+   background: rgb(36,38,81);
+   background: linear-gradient(99deg, rgba(36,38,81,1) 0%, rgba(95,95,95,1) 50%, rgba(131,78,78,1) 100%);
+   padding: 15px;
+}
+
+header{
+   margin-bottom: 50px;
+}
+.practice{
+   max-width: 1200px;
+   margin: 0 auto;
+   margin-bottom: 100px;
+   background-color: #00ffff23;
+}
+
+[class*="practice-txt"]{
+	margin-bottom: 50px;
+   min-height: 400px;
+}
+
+.block1 p{
+   background-color: #363636;
+   color: aliceblue;
+   margin-bottom: 50px;
+}
+
+.practice-txt1{
+   max-width: 750px;
+   min-height: auto;
+   margin: 0 auto;
+   color: rgba(133, 133, 133, 0.436);
+   background: url("../img/cake.jpg") no-repeat  0 0 / 50% 100%, linear-gradient(211deg, rgba(34,193,195,1) 0%, rgba(110,153,122,1) 12%, rgba(26,43,163,1) 30%, rgba(190,16,43,1) 43%, rgba(153,76,20,1) 57%, rgba(92,26,87,1) 80%, rgba(47,192,14,1) 87%, rgba(32,48,46,1) 100%);
+   margin-bottom: 50px;
+}
+
+.practice-txt2{
+   background: url("../img/pattern2.jpg") repeat-x 0 0 / 100px,  url("../img/pattern.jpg") repeat-y 20px 20px / 100px, rgba(110, 153, 122, 0.799);
+}
+
+.practice-txt3{
+   background: url("../img/pattern2.jpg") no-repeat center / 100px,  url("../img/pattern.jpg") no-repeat right bottom / 100px, url("../img/pattern.jpg") no-repeat left / 400px;
+}
+
+.practice-txt4{
+   color: #00ffee;
+   background: url("../img/cake.jpg") no-repeat, url("../img/cake.jpg") no-repeat fixed right bottom / 50%;
+}
+
+.practice-txt5{
+   background: url("../img/leaf.jpg") no-repeat 0 0 / 200px, linear-gradient(55.95deg, rgba(255, 64, 58, 0.3) 0%, rgba(247, 94, 5, 0.3) 100%), url("../img/cake.jpg") no-repeat right top / 800px;
+}
+
+.practice2{
+   min-height: 800px;
+   background: url("../img/cloud-top.svg") no-repeat top / 100%, url("../img/cloud-bot.svg") no-repeat bottom / 100%, url("../img/phone.svg") no-repeat bottom left / 50%, url("../img/berry.svg") no-repeat 100px 200px / 170px, url("../img/leaf.svg") no-repeat center / 100px, rgba(8, 17, 48, 1);
+   font-size: 35px;
+   color: #fff;
+   padding-top: 200px; 
+}
+
+.content-descr{
+   max-width: 500px;
+   margin: 0 0 0 auto;
+}
+/* plan style start  */
+.plan .wrapper{
+   max-width: 693px;
+   padding: 10px;
+   margin: 0 auto 50px;
+}
+
+.plan p, .welcome-txt, .plan .about, .projects-intro p {
+   color: #7D7D7D;
+   font-family: Inter;
+   font-size: 18px;
+   font-weight: 400;
+   line-height: 1.46;
+}
+
+h2, .plan ul, .plan h3{
+   color: #37393F;
+   font-family: Poppins;
+   font-size: 20px;
+   font-weight: 400;
+} 
+
+.plan-intro {
+   margin-bottom: 20px;
+}
+.welcome{
+   padding: 5px 0 5px 0;
+   font-size: 0;
+   margin-bottom: 16px;
+}
+.square {
+   width: 12px;
+   height: 12px;
+   background: #40DDB6;
+   display: inline-block;
+   margin-right: 6px;
+}
+.welcome-txt {
+   color: #37393F;
+   font-weight: 500;
+   line-height: normal;
+   display: inline-block;
+}
+h2{
+   font-size: 40px;
+   font-weight: 700;
+   line-height: 1.21;
+   font-weight: 700;
+}
+
+.plan p{
+   margin-bottom: 15px;
+}
+
+.plan-desr{
+   margin-bottom: 20px;
+}
+
+.plan li{
+   background: url("../img/vector.jpg") left top no-repeat;
+   line-height: 1.65;
+   padding-left: 35px;
+   margin-bottom: 23px;
+}
+
+.plan ul {
+   margin-bottom: 43px;
+}
+
+.plan h3{
+   font-weight: 600;
+   line-height: 1.5;
+   margin-bottom: 3px;
+}
+
+.experience, .awards{
+   max-width: 295px;
+   padding: 31px 32px 32px 90px;
+   display: inline-block;
+   margin-right: 21px;
+   border: 1px solid #E3E3E3;
+}
+
+.advantages p, .experience p{
+   font-size: 16px;
+   line-height: 1.35;
+}
+
+.experience{
+   background: url("../img/experience.jpg") no-repeat 32px 31px / 42px;
+}
+
+.awards{
+   background: url("../img/awards.jpg") no-repeat 37px 31px / 42px;
+}
+
+.advantages{
+   margin-bottom: 37px;
+}
+
+.plan .about{
+   color: #FFF;
+   font-weight: 600;
+   line-height: normal;
+   text-transform: capitalize;
+   padding: 21px 27px 22px 27px;
+   background: #6B77E5;
+   display: inline-block;
+}
+/* plan style end  */
+/* =========================================================== */
+/* projects style start  */
+.projects .wrapper{
+   max-width: 1240px;
+   margin: 0 auto 50px;
+   padding: 0 10px;
+}
+
+.projects-intro{
+   text-align: center;
+   margin-bottom: 47px;
+}
+
+.projects .square-wrapper{
+   margin-bottom: 14px;
+}
+
+.projects h2{
+   margin-bottom: 14px;
+}
+
+.cards {
+   font-size: 0;
+   margin-bottom: 58px;
+}
+
+.cards:last-child{
+   margin-bottom: 0;
+}
+
+.card{
+   width: 384px;
+   height: 582px;
+   display: inline-block;
+   margin-right: 34px;
+}
+
+.card:last-child{
+   margin-right: 0;
+}
+
+.card .pic{
+   width: 100%;
+   height: 501px;
+   margin-bottom: 24px;
+}
+
+.card .name{
+   color: #37393F;
+   font-family: Poppins;
+   font-size: 20px;
+   font-weight: 600;
+   line-height: 1.27;
+   margin-bottom: 10px;
+}
+
+.date{
+   color: #7D7D7D;
+   font-family: Inter;
+   font-size: 14px;
+   font-weight: 400;
+   line-height: 1.46;
+   padding-left: 25px;
+   background: url("../img/date.jpg") no-repeat left / 22px;
+}
+
+.card .pic1{background: url("../img/card1.jpg") center / cover no-repeat;}
+.card .pic2{background: url("../img/card2.jpg") center / cover no-repeat;}
+.card .pic3{background: url("../img/card3.jpg") center / cover no-repeat;}
+.card .pic4{background: url("../img/card4.jpg") center / cover no-repeat;}
+.card .pic5{background: url("../img/card5.jpg") center / cover no-repeat;}
+.card .pic6{background: url("../img/card6.jpg") center / cover no-repeat;}
+
+
+/* projects style end  */
+/* ========================================================== */
+/* euphoria-clothing style start  */
+.euphoria-clothing .wrapper{
+   padding-left: 21px;
+   max-width: 1240px;
+   margin: 0 auto;
+   background-color: #fff;
+   color: #807D7E;
+   font-family: Causten;
+   font-size: 20px;
+   font-weight: 400;
+   line-height: 1.67;
+   letter-spacing: 0.4px;
+}
+.wrapper-divider{
+   max-width: 1240px;
+   margin: 0 auto;
+   background-color: #fff;
+   margin-bottom: 30px;
+}
+
+.titles{
+   font-family: Core Sans C;
+   font-weight: 600;
+   line-height: 1.19;
+}
+
+h2.title.titles{
+   background: url("../img/purple.jpg") no-repeat; 
+   padding-left: 21px;
+}
+
+.wrapper-divider h2.title {
+   display: inline-block;
+   color: #3C4242;
+   font-size: 28px;
+   letter-spacing: 0.56px;
+}
+
+.wrapper .subtitle {
+   color: #807D7E;
+   font-size: 20px; 
+   letter-spacing: 0.4px;
+   margin-bottom: 25px;
+   line-height: 1.67;
+}
+
+.txt{
+   margin-bottom: 25px;
+}
+
+.euphoria-bold{
+   font-weight: 700;
+}
+
+.txt p{
+   margin-bottom: 20px;
+}
+
+.see-more{
+   color: #807D7E;
+   font-family: Core Sans C;
+   font-size: 20px;
+   font-weight: 600;
+   line-height: 1.67;
+   letter-spacing: 0.4px;
+}
+/* euphoria-clothing style end  */
+/* ================================================= */
+/* everyday style start  */
+.everyday-wrapper{
+   max-width: 1240px;
+   margin: 0 auto;
+   font-size: 0;
+}
+
+.everyday{
+   margin-bottom: 50px;
+}
+
+.box1{
+   display: inline-block;
+   width: 614px;
+   background: url("../img/every1.jpg") 0 0 / contain no-repeat;
+   vertical-align: top;
+   padding: 183px 74px 174px 74px;
+}
+
+.box2{
+   display: inline-block;
+   width: 626px;
+   height: 640px;
+   background: url("../img/every2.jpg") 0 0 / contain no-repeat;
+   vertical-align: top;
+}
+
+.everaday-title{
+   color: #FFF;
+   font-family: Core Sans C;
+   font-size: 34px;
+   font-weight: 800;
+   line-height: 1.47;
+   letter-spacing: 0.208px;
+   margin-bottom: 30px;
+}
+
+.everaday-descr{
+   color: #FFF;
+   font-family: Causten;
+   font-size: 20px;
+   font-weight: 300;
+   letter-spacing: 1px;
+   line-height: 1.2;
+   margin-bottom: 50px;
+}
+
+.everyday-btn{
+   border-radius: 8px;
+   background: #FFF;
+   display: inline-block;
+   color: #3C4242;
+   font-family: Causten;
+   font-size: 18px;
+   font-weight: 600;
+   padding: 12px 44px;
+}
+
+/* everyday style end  */
