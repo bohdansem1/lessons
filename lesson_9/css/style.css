@@ -1,0 +1,796 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:regular,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Inter:regular,500,600&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Cormorant+Infant:700&display=swap");
+@import url(reset.css);
+
+header, footer{
+   font-size: 32px;
+   text-align: center;
+   background-color: #bebebe;
+}
+.wrap {
+   text-align: center;
+   margin: 0 auto;
+   max-width: 1440px;
+}
+.block {
+   background-color: #ffffff;
+   color: rgb(255, 0, 0);
+   font-size: 20px;
+   border: 2px solid rgb(242, 255, 0);
+   border-radius: 10px;
+   padding: 15px;
+   display: inline-block;
+   margin: 0 auto;
+   margin-bottom: 50px;
+}
+.image{
+   opacity: 0;
+}
+
+.block:hover .link{
+   color: #2fff00;
+}
+
+.block:hover .image {
+   opacity: 1;
+}
+
+.link2{
+   border: 2px solid yellowgreen;
+   padding: 5px 15px;
+   background-color: #55ba5b;
+}
+
+.link2:hover{
+   background-color: #3f8844;
+   color: #fff;
+}
+
+.active{
+   margin-bottom: 50px;
+}
+
+.link2:active{
+   border: 3px solid yellowgreen;
+   padding: 5px 17px;
+   background-color: #0fe71e;
+}
+
+.block2 li{
+   color: #ffffff;
+   padding: 5px 15px;
+   background-color: #000000;
+   margin-right: 20px;
+   border: 2px solid #ff0000;
+   display: inline-block;
+}
+
+.block2 ul {
+   background-color: #606060;
+   max-width: 1440px;
+   margin: 0 auto;
+}
+
+.block2 li:hover{
+   color: #ff0000;
+}
+
+.block2 .i-link-visited:visited{
+   color: #606060;
+}
+
+.block2 a:focus{
+   outline: 1px solid rgb(0, 221, 255);
+}
+
+.block2{
+   margin-bottom: 50px;
+}
+
+.link3{
+   border: 2px solid rgb(67, 100, 2);
+   padding: 5px 15px;
+   background-color: #083697;
+}
+
+.link3:hover{
+   background-color: #04215e;
+   color: #fff;
+}
+
+.figure{
+   font-size: 50px;
+   padding-top: 50px;
+   color: #fff;
+   visibility: hidden;
+   width: 100%;
+   height: 150px;
+   background-color: rgb(47, 255, 0);
+   margin-bottom: 50px;
+}
+
+.figure:target{
+   visibility: visible;
+}
+
+.block4{
+   padding: 10px;
+   font-style: 20px;
+   background-color: #a10000;
+   color: #fff;
+   max-width: 1440px;
+   margin: 0 auto;
+}
+
+.block4 *{
+   color: #a1a1a1;
+}
+
+.block4 div:first-child{
+   color: #00ff00;
+   margin-bottom: 20px;
+}
+
+.block4 p:first-of-type{
+   text-transform: uppercase;
+   margin-bottom: 20px;
+}
+
+.block4 p:last-child{
+   text-transform: uppercase;
+   margin-bottom: 20px;
+}
+
+.block4 p:nth-child(6){
+   margin-bottom: 20px;
+}
+
+.block4 *:not(p:last-child){
+   color: #ffffff;
+
+}
+
+.block5 ul{
+   padding: 15px;
+   background-color: #dbdbdb;
+   box-shadow: 4px 4px 5px #000, -4px -4px 5px #000 ;
+   border-radius: 5px;
+}
+
+.block5 li:hover{
+   background-color: #979797;
+}
+
+.block5 li::before{
+   content: "";
+   display: inline-block;
+   width: 7px;
+   height: 7px;
+   background-color: #000000;
+   border-radius: 50%;
+   margin-right: 7px;
+}
+
+.block5 li::after{
+   content: "";
+   display: inline-block;
+   width: 7px;
+   height: 7px;
+   background-color: #000000;
+   border-radius: 50%;
+   margin-left: 7px;
+}
+.block5{
+   margin-bottom: 100px;
+}
+
+/* GAME START */
+.game{
+   min-height: 650px;
+   font-size: 0;
+   text-align: left;
+   background-color: #b5b3b3;
+}
+
+.game-intro{
+   font-size: 24px;
+   text-align: center;
+   margin-bottom: 50px;
+   color:#ff0000
+}
+
+.line-1{
+   width: 50px;
+   height: 50px;
+   /* border-radius: 20px; */
+   background-color: #51ff00;
+   display: inline-block;
+}
+
+.line-2{
+   width: 50px;
+   height: 50px;
+   display: inline-block;
+}
+
+[class*="line"]{
+	height: 50px;
+   /* border-radius: 20px; */
+   background-color: #51ff00;
+   display: inline-block;
+}
+
+.line-1:hover + .line-2,
+.line-2:hover{
+   width: 1024px;
+}
+
+.line-2:hover{
+   width: 1390px;
+}
+
+
+.line-3-1{
+   display: inline-block;
+   width: 1390px;
+   visibility: hidden;
+}
+
+.line-3{
+   width: 50px;
+   height: 50px;
+   display: inline-block;
+   visibility: hidden;
+}
+.line-2:hover ~ .line-3,
+.line-3:hover{
+   width: 50px;
+   height: 50px;
+   display: inline-block;
+   visibility: visible;
+}
+
+
+.line-3:hover{
+   height: 100px;
+}
+
+.line-4-1{
+   display: inline-block;
+   width: 1390px;
+   visibility: hidden;
+}
+
+.line-4{
+   width: 50px;
+   height: 50px;
+   display: inline-block;
+   visibility: hidden;
+}
+
+.line-3:hover ~ .line-4,
+.line-4:hover{
+   width: 50px;
+   height: 50px;
+   display: inline-block;
+   visibility: visible;
+}
+.line-4{
+   width: 100%;
+   visibility: hidden;
+}
+.line-4:hover{
+   width: 100%;
+   visibility: visible;
+}
+
+.line-5{
+   width: 20px;
+   height: 70px;
+   display: inline-block;
+   visibility: hidden;
+}
+
+.line-5-1{
+   width: 1420px;
+   visibility: hidden;
+}
+
+.line-4:hover ~ .line-5,
+.line-5:hover{
+   width: 20px;
+   height: 70px;
+   display: inline-block;
+   visibility: visible;
+}
+
+.line-5:hover{
+   width: 20px;
+   height: 70px;
+}
+
+.line-5:hover ~ .line-6,
+.line-6:hover{
+   width: 20px;
+   height: 70px;
+   visibility: visible;
+}
+
+.line-6{
+   visibility: hidden;
+   width: 20px;
+   height: 70px;
+}
+
+.line-6-1{
+   visibility: hidden;
+   width: 1420px;
+   height: 70px;
+}
+
+.line-7{
+   width: 10px;
+   height: 70px;
+   visibility: hidden;
+}
+
+.line-7-1{
+   width: 1430px;
+   height: 70px;
+   visibility: hidden;
+}
+
+
+.line-6:hover ~ .line-7,
+.line-7:hover{
+   width: 10px;
+   height: 70px;
+   visibility: visible;
+}
+
+.line-end{
+   width: 10px;
+   height: 10px;
+   background-color: #ff0000;
+   visibility: hidden;
+}
+
+.line-7:hover ~ .line-end,
+.line-end:hover{
+   width: 10px;
+   height: 10px;
+   background-color: #ff0000;
+   visibility: visible;
+}
+
+.game-win{
+   color:#00ff00;
+   font-size: 16px;
+   width: 500px;
+   height: 500px;
+   visibility: hidden;
+}
+
+.line-end:hover ~ .game-win,
+.game-win:hover{
+   width: 500px;
+   height: 500px;
+   visibility: visible;
+}
+
+/* GAME END */
+/* management style start */
+
+.management{
+   margin-bottom: 50px;
+}
+
+.management > *{
+   margin-bottom: 15px;
+}
+
+.management .container{
+   max-width: 712px;
+   margin: 0 auto;
+   padding: 10px;
+}
+
+.management .title {
+   color: #37393F;
+   font-family: Poppins;
+   font-size: 30px;
+   font-weight: 600;
+   line-height: 1.27;
+   margin-bottom: 13px;
+}
+
+.management .descr p, .benefits li {
+   color: #7D7D7D;
+   font-family: Inter;
+   font-size: 18px;
+   font-weight: 400;
+   line-height: 1.46;
+}
+
+.benefits-txt{
+   display: inline-block;
+}
+
+.container > .descr{
+   margin-bottom: 40px;
+}
+
+.management .subtitle{
+   color: #6B77E5;
+   font-family: Poppins;
+   font-size: 20px;
+   font-weight: 600;
+   line-height: 1.27;
+   margin-bottom: 12px;
+}
+
+.benefits{
+   font-size: 0;
+}
+
+.benefits-pic{
+   max-width: 331px;
+   margin-right: 29px;
+}
+
+.management .benefits-title{
+   font-size: 25px;
+   margin-bottom: 15px;
+}
+
+.management .benefits-subtitle{
+   color: #40DDB6;
+   margin-bottom: 21px;
+}
+
+.benefits-txt li::before{
+   display: inline-block;
+   content: "";
+   width: 27px;
+   height: 27px;
+   background: url("../img/vector.svg") left no-repeat;
+   margin-right: 8px;
+}
+
+.benefits-txt li:hover::before{
+   background: url("../img/vector2.svg") left no-repeat;
+}
+
+.benefits-txt li:not(:last-child){
+   margin-bottom: 30px;
+}
+
+.benefits-txt li{
+   line-height: normal;
+   height: 27px;
+   vertical-align: center;
+}
+
+.benefits{
+   margin-bottom: 50px;
+}
+
+.management > *:last-child{
+   margin-bottom: 0;
+}
+
+/* management style end */
+/* plan style start */
+.plan .wrapper{
+   max-width: 695px;
+   padding: 10px;
+   margin: 0 auto 50px;
+}
+
+.plan p, .pretitle, .plan .about, .projects-intro p, .plan h3 ~ p, .card-descr p{
+   color: #7D7D7D;
+   font-family: Inter;
+   font-size: 18px;
+   font-weight: 400;
+   line-height: 1.46;
+}
+
+h2, .plan h3{
+   color: #37393F;
+   font-family: Poppins;
+   font-size: 20px;
+   font-weight: 400;
+} 
+
+.plan-intro {
+   margin-bottom: 10px;
+}
+.welcome{
+   padding: 5px 0 5px 0;
+   font-size: 0;
+   margin-bottom: 16px;
+}
+.square {
+   width: 12px;
+   height: 12px;
+   background: #40DDB6;
+   display: inline-block;
+   margin-right: 6px;
+}
+.pretitle {
+   color: #37393F;
+   font-weight: 500;
+   line-height: normal;
+   display: inline-block;
+}
+
+.pretitle::before {
+   display: inline-block;
+   content: "";
+   width: 12px;
+   height: 12px;
+   background: #40DDB6;
+   margin-right: 6px;
+}
+h2{
+   font-size: 40px;
+   font-weight: 700;
+   line-height: 1.21;
+}
+
+.plan-descr p:not(:last-child){
+   margin-bottom: 16px;
+}
+
+.plan-descr{
+   margin-bottom: 48px;
+}
+
+/* .plan li{
+   background: url("../img/vector.jpg") left top no-repeat;
+   line-height: 1.65;
+   padding-left: 35px;
+   margin-bottom: 23px;
+}
+
+.plan ul {
+   margin-bottom: 43px;
+} */
+
+.plan h3{
+   font-weight: 600;
+   line-height: normal;
+   margin-bottom: 12px;
+}
+
+.experience, .awards{
+   width: 100%;
+   padding: 28px 41px 28px 38px;
+   display: inline-block;
+   border: 1px solid #E3E3E3;
+}
+
+.advantages > *:not(:last-child){
+   margin-bottom: 31px;
+}
+
+/* .advantages p, .experience p{
+   font-size: 16px;
+   line-height: 1.35;
+} */
+
+.advantages{
+   margin-bottom: 48px;
+}
+
+.plan .about{
+   color: #FFF;
+   font-family: Inter;
+   font-size: 18px;
+   font-weight: 600;
+   text-transform: capitalize;
+   padding: 21px 35px 22px 35px;
+   background: #6B77E5;
+   display: inline-block;
+}
+
+.plan h3::before{
+   display: inline-block;
+   content: "";
+   width: 27px;
+   height: 27px;
+   background: url("../img/vector.svg") left no-repeat;
+   margin-right: 19px;
+}
+
+.plan h3 ~ p{
+   margin-left: 46px;
+}
+
+.plan a:hover{
+   text-decoration: underline;
+   background: #4b5be8;
+   outline: 1px solid #000000;
+
+}
+/* plan style end */
+/* "how" style start  */
+.how .wrapper{
+   max-width: 1240px;
+   padding: 10px;
+   margin: 0 auto 50px;
+}
+
+.card > *{
+   margin-bottom: 15px;  /* margin to every element first generation*/
+}
+
+.title-wrapper{
+   text-align: center;
+   margin-bottom: 77px;
+}
+
+.how-pretitle{
+   margin-bottom:16px ;
+}
+
+.cards{
+   font-size: 0;
+}
+
+.card{
+   display: inline-block;
+   text-align: center;
+   padding: 58px 43px;
+   max-width: 386px;
+   background: #F4F4F4;
+}
+
+.card-title{
+   color: #37393F;
+   /* text-align: center; */
+   font-family: Poppins;
+   font-size: 25px;
+   font-weight: 600;
+   line-height: 1.27;
+   margin-bottom: 16px;
+}
+
+.card-descr{
+   /* text-align: center; */
+   margin-bottom: 37px;
+}
+
+.card-link{
+   display: inline-block;
+   color: #6B77E5;
+   font-family: Inter;
+   font-size: 18px;
+   font-weight: 600;
+}
+
+.card-link:hover{
+   text-decoration: underline;
+}
+
+.card2{
+   margin: 0 31px;
+}
+
+.card::before{
+   display: block;
+   content: "";
+   width: 100%;
+   height: 72px;
+   background: url("../img/card1.svg") top  / 72px 72px no-repeat;
+   margin-top: -94px;  /* padding-top height + icon heiight / 2 */
+   margin-bottom: 22px;
+}
+
+.card2::before{
+   background: url("../img/card2.svg") top  / 72px 72px no-repeat;
+}
+
+.card3::before{
+   background: url("../img/card3.svg") top  / 72px 72px no-repeat;
+}
+
+.card1:hover::before{
+   background: url("../img/card1-1.svg") top  / 72px 72px no-repeat;
+}
+.card2:hover::before{
+   background: url("../img/card2-2.svg") top  / 72px 72px no-repeat;
+}
+.card3:hover::before{
+   background: url("../img/card3-3.svg") top  / 72px 72px no-repeat;
+}
+
+.card > *:last-child{
+   margin-bottom: 0px;  /* last element margin off */
+}
+/* "how" style end  */
+
+/* Jewels style start  */
+.jewels {
+   font-family: Cormorant Infant;
+   font-size: 60px;
+   font-weight: 700;
+   line-height: 1.15;
+}
+
+.jew-title-rwapper{
+   padding-top: 150px;
+   display: inline-block;
+   vertical-align: top;
+   margin-right: 23px;
+}
+.wrapper {
+   max-width: 1234px;
+   padding: 10px;
+   margin: 0 auto 50px;
+   font-size: 0;
+}
+.jewels-title {
+   color:#000;
+   font-family: Cormorant Infant;
+   font-size: 60px;
+   line-height: 1.15;
+   display: inline-block;
+   vertical-align: top;
+}
+
+.jewels-title::after{
+   display: block;
+   content: "";
+   width: 65%;
+   height: 3px;
+   background: #78473B;
+   margin-top: 13px;
+}
+
+.jew1, .jew2{
+   font-family: Cormorant Infant;
+   font-size: 24px;
+   font-weight: 700;
+   line-height: 1.4;
+   display: inline-block;
+   vertical-align: top;
+}
+.jew1 {
+   margin-right: 55px;
+   padding-top: 32px;
+}
+.pic {
+   max-width: 334px;
+   max-height: 381px;
+   border: 1px solid #000;
+}
+
+/* .pic1{
+   background: url("../img/jew1.jpg") 10px 9px no-repeat;
+}
+.pic2{
+   background: url("../img/jew2.jpg") 10px 9px no-repeat;
+   overflow: visible;
+} */
+
+.pic1 img, .pic2 img{
+   margin: 9px 0 0 10px;
+   max-width: 334px;
+}
+
+.pic1, .pic2{
+   margin-bottom: 34px;
+}
+.name {
+   margin-bottom: 4px;
+}
+
+.jew2-title {
+   font-size: 46px;
+   line-height: 1.13;
+   margin-bottom: 31px;
+}
+
+/* Jewels style end  */
