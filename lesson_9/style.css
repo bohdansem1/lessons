@@ -796,7 +796,8 @@ h2{
 }
 
 .jew1:hover .pic, .jew2:hover .pic{
-   border: 2px solid #ff0000;
+   border: 2px solid #000000;
+   background-color: #78473b98;
 }
 
 /* Jewels style end  */
