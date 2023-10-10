@@ -456,6 +456,7 @@ header, footer{
    height: 27px;
    background: url("../img/vector.svg") left no-repeat;
    margin-right: 8px;
+   margin-left: -35px;
 }
 
 .benefits-txt li:hover::before{
@@ -468,7 +469,7 @@ header, footer{
 
 .benefits-txt li{
    line-height: normal;
-   vertical-align: center;
+   margin-left: 35px;
 }
 
 .benefits{
