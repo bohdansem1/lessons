@@ -795,4 +795,8 @@ h2{
    margin-bottom: 31px;
 }
 
+.jew1:hover .pic, .jew2:hover .pic{
+   border: 2px solid #ff0000;
+}
+
 /* Jewels style end  */
