@@ -778,8 +778,9 @@ h2{
 } */
 
 .pic1 img, .pic2 img{
-   margin: 9px 0 0 10px;
-   max-width: 334px;
+   padding: 9px 0 0 10px;
+   /* margin: 9px 0 0 10px; */
+   /* max-width: 334px; */
 }
 
 .pic1, .pic2{
