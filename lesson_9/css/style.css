@@ -722,7 +722,7 @@ h2{
 }
 
 .jew-title-rwapper{
-   padding-top: 150px;
+   padding-top: 300px;
    display: inline-block;
    vertical-align: top;
    margin-right: 23px;
@@ -730,7 +730,7 @@ h2{
 .wrapper {
    max-width: 1234px;
    padding: 10px;
-   margin: 0 auto 50px;
+   margin: 0 auto 150px;
    font-size: 0;
 }
 .jewels-title {
@@ -758,10 +758,19 @@ h2{
    line-height: 1.4;
    display: inline-block;
    vertical-align: top;
+   transition: transform 0.8s ease 0s;
+}
+
+.jew1:hover, .jew2:hover{
+   transform: translateY(100px);
+}
+.jew1:hover .jew1-title , .jew2:hover .jew2-title{
+   opacity: 1;
+   visibility: visible;
 }
 .jew1 {
    margin-right: 55px;
-   padding-top: 32px;
+   /* padding-top: 32px; */
 }
 .pic {
    max-width: 334px;
@@ -791,10 +800,13 @@ h2{
    margin-bottom: 4px;
 }
 
-.jew2-title {
+.jew2-title, .jew1-title {
    font-size: 46px;
    line-height: 1.13;
    margin-bottom: 31px;
+   opacity: 0;
+   visibility: hidden;
+   transition: opacity 0.8s ease;
 }
 
 .jew1:hover .pic, .jew2:hover .pic{
