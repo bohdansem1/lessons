@@ -767,6 +767,7 @@ h2{
    max-width: 334px;
    max-height: 381px;
    border: 1px solid #000;
+   padding: 9px 0 0 10px;
 }
 
 /* .pic1{
@@ -777,11 +778,11 @@ h2{
    overflow: visible;
 } */
 
-.pic1 img, .pic2 img{
+/* .pic1 img, .pic2 img{
    padding: 9px 0 0 10px;
-   /* margin: 9px 0 0 10px; */
-   /* max-width: 334px; */
-}
+   margin: 9px 0 0 10px;
+   max-width: 334px;
+} */
 
 .pic1, .pic2{
    margin-bottom: 34px;
