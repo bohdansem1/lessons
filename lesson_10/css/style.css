@@ -1,0 +1,10 @@
+@import url(reset.css);
+
+main{
+   background-color: #905c94a9;
+   padding: 30px 20px;
+}
+
+p:not(:last-child){ 
+   margin-bottom: 20px;
+}
