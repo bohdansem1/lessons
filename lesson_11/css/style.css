@@ -1,0 +1,17 @@
+@import url(reset.css);
+main{
+   padding: 15px;
+}
+.price__add-to-card{
+   background-color: #8A33FD;
+}
+header{
+padding: 15px;
+background-color: #dfdfdf;
+}
+
+footer{
+   color: #F6F6F6;
+   padding: 15px;
+   background-color: #3C4242;
+}
