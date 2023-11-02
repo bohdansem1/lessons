@@ -281,14 +281,12 @@
    margin: 0 13px;
 }
 .card__descr{
-
    background-color: #fff;
-   padding: 24px 69px;
+   padding: 24px 42px;
    position: absolute;
    bottom: 22px;
    left: 22px;
-   max-width: 341px;
-
+   width: 341px;
 }
 
 .descr-card__title{
