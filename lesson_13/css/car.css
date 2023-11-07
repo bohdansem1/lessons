@@ -1,0 +1,159 @@
+@import url(reset.css);
+
+body{
+   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.1)), url("../img/sahara.webp") 0 0 / cover no-repeat;
+}
+
+header{
+   text-align: left;
+   font-size: 24px;
+   padding: 5px;
+   font-weight: 700;
+   color: #0dff00;
+}
+.wrapper{
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 20px;
+}
+
+.car{
+   width: 100%;
+   position: relative;
+}
+
+.car__container{
+   top: 350px;
+   position: relative;
+   max-width: 800px;
+   margin: 0 auto;
+   font-size: 0;
+}
+
+.car__middle{
+   /* background-color: #757575; */
+   /* width: 800px;
+   height: 80px;
+    */
+   border-bottom: 80px solid #757575;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	height: 0;
+	width: 800px;
+   transform: rotate(180deg);
+}
+
+.car__top{
+   position: relative;
+   width: 0;
+	height: 0;
+	border-left: 300px solid transparent;
+	border-right: 500px solid transparent;
+	border-bottom: 120px solid #949494;
+   transform-origin: right bottom;
+   transform: rotate(-3.7deg) translateY(0.3px);
+}
+
+.car__top-down{
+   width: 0;
+	height: 0;
+	border-top: 50px solid transparent;
+	border-right: 800px solid #757575;
+	border-bottom: 0px solid transparent;
+}
+
+.car__first-window{
+   position: absolute;
+   left: -196px;
+   top: 20px;
+	height: 0;
+	border-left: 200px solid transparent;
+	border-right: 300px solid transparent;
+	border-bottom: 80px solid #3d3d3d;
+   /* transform: rotate(deg); */
+}
+
+.car__first-window::after{
+   content: "";
+   position: absolute;
+   left: 200px;
+   top: 50px;
+   width: 95px;
+	height: 45px;
+	transform: skew(20deg);
+	background: #949494;
+}
+
+.car__arch{
+   position: absolute;
+   bottom: 0;
+   border-bottom: 60px solid rgb(0, 0, 0);
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	height: 0;
+	width: 125px;
+}
+
+.car__arch--front{
+   left: 50px;
+}
+.car__arch--back{
+   right: 50px;
+}
+
+.car__wheel{
+   width: 100px;
+   height: 100px;
+   transform: translateX(-12px);
+}
+
+.car__window-line{
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   display: inline-block;
+   width: 0;
+   border: 1px solid black;
+   height: 80px;
+   z-index: 1;
+}
+
+.car__handle{
+   position: absolute;
+   background-color: #7e7e7e;
+   left: 35%;
+   z-index: 3;
+   display: inline-block;
+   width: 20px;
+   height: 5px;
+   border: 2px solid rgb(71, 71, 71);
+}
+
+.car__handle2{
+   transform: translateX(200px);
+}
+
+.car__middle::before{
+   content: "";
+   position: absolute;
+   right: 0;
+   /* top: 0; */
+   width: 10px;
+   height: 5px;
+   background-color: #ffff;
+   transform: translate3d(15px, 75px, 0);
+   box-shadow: 64px 6px 75px 56px rgb(255, 255, 255);
+}
+
+.car__middle::after{
+   content: "";
+   position: absolute;
+   left: 0;
+   /* top: 0; */
+   width: 5px;
+   height: 30px;
+   background-color: #ff0000;
+   transform: translate3d(-15px, 90px, 0);
+   box-shadow: -36px 6px 75px 56px rgba(252, 0, 0, 0.505);
+}
+
