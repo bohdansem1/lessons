@@ -160,7 +160,6 @@ header{
    background-color: #ff0000;
    transform: translate3d(-15px, 90px, 0);
    box-shadow: -36px 6px 75px 56px rgba(252, 0, 0, 0.505);
-  
 }
 
 /* ____________Animations______________ */
@@ -444,7 +443,7 @@ header{
 @keyframes main-camel { 
 
    0%{
-     left: 0;
+      left: 0;
    }
    100%{
       left: 800px;
@@ -454,7 +453,7 @@ header{
 @keyframes main-camel-2 {
 
    0%{
-     transform: rotate(0);
+      transform: rotate(0);
 
    }
    100%{
@@ -465,7 +464,7 @@ header{
 @keyframes horse-go {
 
    0%{
-     left: 800px;
+      left: 800px;
    }
    100%{
       left: 2000px;
@@ -475,7 +474,7 @@ header{
 @keyframes visibility {
 
    0%{
-       visibility: visible;
+      visibility: visible;
       opacity: 1;
    }
    100%{
@@ -487,12 +486,12 @@ header{
 @keyframes horse {
 
    0%{
-       visibility: hidden;
+      visibility: hidden;
       opacity: 0;
       
    }
    100%{
-     visibility: visible;
+      visibility: visible;
       opacity: 1;
    }
 }
