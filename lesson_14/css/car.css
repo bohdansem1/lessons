@@ -1,0 +1,498 @@
+@import url(reset.css);
+
+body{
+   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.1)), url("../img/sahara.webp") 0 0 / cover no-repeat;
+}
+
+header{
+   text-align: left;
+   font-size: 24px;
+   padding: 5px;
+   font-weight: 700;
+   color: #0dff00;
+}
+.wrapper{
+   overflow: clip;
+	min-height: 100%;
+   /* max-width: 1200px; */
+   margin: 0 auto;
+   padding: 20px;
+}
+
+.car{
+   width: 100%;
+   position: relative;
+}
+
+.car{
+   top: 350px;
+   position: relative;
+   max-width: 800px;
+   margin: 0 auto;
+   font-size: 0;
+   z-index: 2;
+}
+
+
+.car__middle{
+   /* background-color: #757575; */
+   /* width: 800px;
+   height: 80px;
+    */
+   border-bottom: 80px solid #757575;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	height: 0;
+	width: 800px;
+   transform: rotate(180deg);
+}
+
+.car__top{
+   position: relative;
+   width: 0;
+	height: 0;
+	border-left: 300px solid transparent;
+	border-right: 500px solid transparent;
+	border-bottom: 120px solid #949494;
+   transform-origin: right bottom;
+   transform: rotate(-3.7deg) translateY(0.3px);
+}
+
+.car__top-down{
+   width: 0;
+	height: 0;
+	border-top: 52px solid transparent;
+	border-right: 800px solid #757575;
+	border-bottom: 0px solid transparent;
+}
+
+.car__first-window{
+   position: absolute;
+   left: -196px;
+   top: 20px;
+	height: 0;
+	border-left: 200px solid transparent;
+	border-right: 300px solid transparent;
+	border-bottom: 80px solid #3d3d3d;
+   /* transform: rotate(deg); */
+}
+
+.car__first-window::after{
+   content: "";
+   position: absolute;
+   left: 200px;
+   top: 50px;
+   width: 95px;
+	height: 45px;
+	transform: skew(20deg);
+	background: #949494;
+}
+
+.car__arch{
+   position: absolute;
+   bottom: 0;
+   border-bottom: 60px solid rgb(0, 0, 0);
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	height: 0;
+	width: 125px;
+}
+
+.car__arch--front{
+   left: 50px;
+}
+.car__arch--back{
+   right: 50px;
+}
+
+.car__wheel{
+   width: 100px;
+   height: 100px;
+   transform: translateX(-12px);
+   
+}
+
+.car__window-line{
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   display: inline-block;
+   width: 0;
+   border: 1px solid black;
+   height: 80px;
+   z-index: 1;
+}
+
+.car__handle{
+   position: absolute;
+   background-color: #7e7e7e;
+   left: 35%;
+   z-index: 3;
+   display: inline-block;
+   width: 20px;
+   height: 5px;
+   border: 2px solid rgb(71, 71, 71);
+}
+
+.car__handle2{
+   transform: translateX(200px);
+}
+
+.car__middle::before{
+   content: "";
+   position: absolute;
+   right: 0;
+   /* top: 0; */
+   width: 10px;
+   height: 5px;
+   background-color: #ffff;
+   transform: translate3d(15px, 75px, 0);
+   box-shadow: 64px 6px 75px 56px rgb(255, 255, 255);
+}
+
+.car__middle::after{
+   content: "";
+   position: absolute;
+   left: 0;
+   /* top: 0; */
+   width: 5px;
+   height: 30px;
+   background-color: #ff0000;
+   transform: translate3d(-15px, 90px, 0);
+   box-shadow: -36px 6px 75px 56px rgba(252, 0, 0, 0.505);
+  
+}
+
+/* ____________Animations______________ */
+
+.car{
+   animation: appearance 4s linear 1 reverse forwards;
+}
+
+
+
+.wrapper:active .car__wheel, .wrapper:active .car, .wrapper:active .car__middle::before, .wrapper:active .paused{
+   animation-play-state: paused;
+}
+
+
+.car__wheel{
+   animation: wheel 0.5s linear 8 reverse forwards;
+}
+
+.message{
+   font-size: 18px;
+   color: aliceblue;
+   border: 1px solid #fff;
+   display: inline-block;
+   padding: 5px;
+   border-radius: 10px;
+   position: absolute;
+}
+
+.animations__first-message{
+   left: 30%;
+   top: 0px;
+   visibility: hidden;
+   opacity: 0;
+   animation: message01 3s linear 1 normal 3s;
+   
+}
+.animations__second-message{
+   left: 50%;
+   top: -50px;
+   visibility: hidden;
+   opacity: 0;
+   animation: message02 3s linear 1 normal 9s;
+   
+}
+.animations__third-message{
+   left: 50%;
+   top: -50px;
+   visibility: hidden;
+   opacity: 0;
+   animation: message02 3s linear 1 normal 12s;
+   
+}
+
+/* .car__middle::after{
+   animation: stop 0.1s linear 1 1.7s forwards;
+} */
+
+.car__middle::before{
+   animation: light 0.4s linear 2 2s ;
+}
+
+
+@keyframes appearance {
+   0%{
+         transform: scale(0.6) translate(-1900px, 100px);
+      }
+   25%{
+         transform: scale(0.6) translate(-350px, 100px) skew(0deg, 0deg);
+      }
+   50%{
+      transform: scale(0.4) translate(700px, 100px) skew(5deg, -12deg) rotate3d(0, 1, 0, 40deg);
+      }
+   100%{
+         transform: scale(0.3) translate(2800px, -500px) skew(10deg, -24deg) rotate3d(0, 1, 0, 80deg);
+      }
+}
+
+@keyframes wheel {
+
+   0%{
+      transform: rotate(0deg);
+   }
+   100%{
+      transform: rotate(360deg);
+   }
+}
+/* 
+@keyframes stop {
+
+   0%{
+      box-shadow: -36px 6px 75px 56px rgba(252, 0, 0, 0);
+   }
+   100%{
+      box-shadow: -36px 6px 75px 56px rgba(252, 0, 0, 0.505);
+   }
+} */
+
+
+@keyframes light {
+
+   0%{
+      box-shadow: 64px 6px 75px 56px rgb(255, 255, 255);
+   }
+   100%{
+      box-shadow: 65px 6px 185px 180px rgb(255, 255, 255);
+   }
+}
+@keyframes camel1 {
+
+   0%{
+      transform: translate(0);
+   }
+   25%{
+      transform: translate(-100px, 10px);
+   }
+   50%{
+      transform: translate(-200px, 0px);
+   }
+   75%{transform: translate(-300px, 0px);
+   }
+   100%{transform: translate(-400px, 0px);
+   }
+
+}
+
+
+.camel{
+   position: relative;
+}
+
+.camel__first-pic {
+   position: absolute;
+   left: 20%;
+   top: 200px;
+   width: 50px;
+   height: 50px;
+}
+
+
+.camel__first-pic{
+   animation: camel1 10s linear infinite forwards;
+}
+
+
+.animations--top{
+   max-width: 1440px;
+   position: relative;
+   top: 250px;
+   z-index: 2;
+}
+
+
+.animations__forbidden{
+   position: absolute;
+   right: 0;
+   top: 0px;
+   width: 100px;
+   height: 100px;
+}
+
+.animations__police-light{
+   position: absolute;
+   left: 115%;
+   top: 0px;
+   width: 100px;
+   height: 100px;
+}
+.animations__police-light::after{
+   content: "";
+   position: absolute;
+   left: 0;
+   top: 0;
+   width: 1px;
+   height: 1px;
+   box-shadow: -36px 206px 180px 130px rgba(0, 63, 252, 0.541);
+   animation: police-blue 0.5s ease-in infinite alternate-reverse;
+}
+.animations__police-light::before{
+   content: "";
+   position: absolute;
+   left: 0;
+   top: 0;
+   width: 1px;
+   height: 1px;
+   box-shadow: -36px 6px 190px 130px rgba(252, 0, 0, 0.541);
+   animation: police-red 0.5s ease-in infinite alternate;
+}
+
+
+
+
+@keyframes message01 {
+
+   0%{
+      visibility: hidden;
+      opacity: 0;
+   }
+   50%{
+      visibility: visible;
+      opacity: 1;
+   }
+   100%{
+      visibility: hidden;
+      opacity: 0;
+   }
+}
+@keyframes message02 {
+
+   0%{
+      visibility: hidden;
+      opacity: 0;
+   }
+   50%{
+      visibility: visible;
+      opacity: 1;
+   }
+   100%{
+      visibility: hidden;
+      opacity: 0;
+   }
+}
+
+@keyframes message03 {
+
+   0%{
+      visibility: hidden;
+      opacity: 0;
+   }
+   50%{
+      visibility: visible;
+      opacity: 1;
+   }
+   100%{
+      visibility: hidden;
+      opacity: 0;
+   }
+}
+
+@keyframes police-red {
+
+   0%{
+      box-shadow: -36px 6px 180px 130px rgba(252, 0, 0, 0.541);
+   }
+   100%{
+      box-shadow: -36px 6px 190px 150px rgba(252, 0, 0, 0.541);
+   }
+}
+@keyframes police-blue {
+
+   0%{
+      box-shadow: -36px 206px 190px 130px rgba(0, 63, 252, 0.541);
+      
+   }
+   100%{
+      box-shadow: -36px 206px 190px 200px rgba(0, 63, 252, 0.541);
+   }
+}
+
+.animations__main-camel{
+   position: absolute;
+   width: 200px;
+   height: 200px;
+   left: 0px;
+   top: 0px;
+   animation: main-camel 3s linear 6s forwards, main-camel-2 0.25s 8 linear 15s forwards, visibility 1s linear 15s forwards;
+}
+
+.animations__horse{
+   transform: rotate3d(0,1,0, 180deg) translateX(80px);
+   position: absolute;
+   width: 300px;
+   height: 200px;
+   left: 0;
+   top: 0px;
+   visibility: hidden;
+   opacity: 0;
+   animation: main-camel 3s linear 8s forwards, main-camel-2 0.25s 8 linear 15s forwards, horse 1s linear 16s forwards, horse-go 4s linear 17s forwards;
+}
+
+@keyframes main-camel { 
+
+   0%{
+     left: 0;
+   }
+   100%{
+      left: 800px;
+   }
+}
+
+@keyframes main-camel-2 {
+
+   0%{
+     transform: rotate(0);
+
+   }
+   100%{
+      transform: rotate(-360deg);
+   }
+}
+
+@keyframes horse-go {
+
+   0%{
+     left: 800px;
+   }
+   100%{
+      left: 2000px;
+   }
+}
+
+@keyframes visibility {
+
+   0%{
+       visibility: visible;
+      opacity: 1;
+   }
+   100%{
+      visibility: hidden;
+      opacity: 0;
+   }
+}
+
+@keyframes horse {
+
+   0%{
+       visibility: hidden;
+      opacity: 0;
+      
+   }
+   100%{
+     visibility: visible;
+      opacity: 1;
+   }
+}
