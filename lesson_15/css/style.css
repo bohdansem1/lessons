@@ -426,6 +426,9 @@
    flex-grow: 1;
    align-items:center;
 }
+.info-order__name:hover{
+   text-decoration: underline;
+}
 
 .info-order__decr{
    display: flex;
