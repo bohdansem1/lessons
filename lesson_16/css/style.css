@@ -213,7 +213,7 @@ font-weight: 500;
 }
 /* ,<<<<--------- buttons */
 
-.info-form__item input, #state, #delivery-instrucrion{
+.info-form__item input, #state, #state-checkout, #delivery-instrucrion{
    border-radius: 8px;
    background: #F6F6F6;
    padding: 18px 22px;
@@ -299,7 +299,7 @@ font-weight: 500;
    font-weight: 400;
    line-height: normal;
 }
-#state {
+#state, #state-checkout {
    color: #807D7E;
    font-family: Causten;
    font-size: 16px;
@@ -347,7 +347,7 @@ font-weight: 500;
    flex-shrink: 0;
 }
 
-.info-form__body--check-out input::placeholder, .info-form__body--check-out #state{
+.info-form__body--check-out input::placeholder, .info-form__body--check-out #state, .info-form__body--check-out #state-checkout{
    font-size: 14px;
 }
 
