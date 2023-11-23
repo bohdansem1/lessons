@@ -356,14 +356,13 @@ font-weight: 500;
    min-width: 246px;
    flex: 1 1 33.333%;
 }
-
+/* 
 .info-form__item--check-out:last-child{
-   /* flex-basis: 382px;
-   flex-grow: 0; */
-}
+   flex-basis: 382px;
+   flex-grow: 0;
+} */
 
 .info-form .info-form__item--check-out:last-child{
-
    flex-grow: 0;
 }
 
@@ -451,18 +450,17 @@ input[type="radio"] {
 /* Створення власного вигляду для радіо-кнопки */
 input[type="radio"] + label {
    position: relative;
-   padding-left: 30px; /* Задає відступ для вигляду круглого кружечка */
    cursor: pointer;
 }
 
 input[type="radio"] + label::before {
    content: '';
    position: absolute;
-   left: 0;
-   top: 50%;
+   left: -37px; /* відступ + ширина елемента */
+   top: 60%;
    transform: translateY(-50%);
-   width: 20px; /* Ширина круглого кружечка */
-   height: 20px; /* Висота круглого кружечка */
+   width: 18px; /* Ширина круглого кружечка */
+   height: 18px; /* Висота круглого кружечка */
    border: 1px solid #3C4242; /* Колір обведення круглого кружечка */
    border-radius: 50%; /* Заокруглені кути для створення круглого кружечка */
 }
@@ -481,6 +479,11 @@ input[type="radio"]:checked + label::before {
    justify-content: space-between;
    margin-bottom: 8px;
 }
+
+.delivery-form__label--before-flex{
+   display: flex;
+   column-gap: 19px;
+}
 .subtitle--method{
    color: #807D7E;
    font-weight: 500;
@@ -490,15 +493,13 @@ input[type="radio"]:checked + label::before {
    margin-bottom: 30px;
 }
 
-.subtitle--padding{
-   padding-left: 30px;
+.subtitle--margin{
    margin-bottom: 30px;
 }
 
 .item-delivery__pic{
    display: flex;
    column-gap: 20px;
-   padding-left: 30px;
    margin-bottom: 30px;
 }
 
@@ -527,9 +528,12 @@ input[type="radio"]:checked + label::before {
    flex-wrap: wrap;
    row-gap: 28px;
    column-gap: 30px;
-   padding-left: 30px;
 }
 
 .item-delivery--payment{
    padding: 45px 48px 45px 28px;
+}
+
+.item-delivery__wrapper-input--payment, .item-delivery__wrapper-input--adress{
+   padding: 0 23px 0 37px;
 }
