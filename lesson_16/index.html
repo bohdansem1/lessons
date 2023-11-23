@@ -196,16 +196,17 @@
 					</h2>
 				</div>
 				<div class="delivery-form__item item-delivery">
-					<div class="item-delivery__wrapper-input">
+					<div class="item-delivery__wrapper-input item-delivery__wrapper-input--adress">
 						<input checked class="item-delivery__input" id="delivery-form__adress" required value="yes"
 							name="adress" type="radio">
 						<label class="delivery-form__label" for="delivery-form__adress">Same as Billing address</label>
 					</div>
 					<hr class="item-delivery__line">
-					<div class="item-delivery__wrapper-input">
+					<div class="item-delivery__wrapper-input item-delivery__wrapper-input--adress">
 						<input class="item-delivery__input" id="different-adress" required value="yes" name="adress"
 							type="radio">
-						<label class="delivery-form__label" for="different-adress">Use a different shipping address</label>
+						<label class="delivery-form__label delivery-form__label--before-flex" for="different-adress">Use a
+							different shipping address</label>
 					</div>
 				</div>
 				<div class="shipp-adress shipp-adress--method">
@@ -241,7 +242,7 @@
 						<input checked class="item-delivery__input" id="credit" required value="yes" name="payment"
 							type="radio">
 						<label class="delivery-form__label" for="credit">Credit Card</label>
-						<h2 class="subtitle subtitle--padding">
+						<h2 class="subtitle subtitle--margin">
 							We accept all major credit cards.
 						</h2>
 						<div class="item-delivery__pic">
@@ -254,7 +255,7 @@
 							<input autocomplete="on" type="text" name="card-number" placeholder="Card Number" id="card-number">
 							<input type="text" name="card-name" placeholder="Name of card" id="card-name">
 							<input type="text" name="card-date" placeholder="Expiration date (MM/YY)" id="card-date">
-							<input type="text" name="card-code" placeholder="Security Code" id="card-code">
+							<input type="password" name="card-code" placeholder="Security Code" id="card-code">
 						</div>
 					</div>
 					<hr class="item-delivery__line">
