@@ -464,13 +464,23 @@ input[type="radio"] + label::before {
    border: 1px solid #3C4242; /* Колір обведення круглого кружечка */
    border-radius: 50%; /* Заокруглені кути для створення круглого кружечка */
 }
-.item-delivery__wrapper-input:hover input[type="radio"] + label::before {
-   background-color: #dbdbdb;
+
+
+input[type="radio"]:hover + label::before {
+   background-color: #8b33fd6b;
 }
 
-/* Зміна вигляду при виборі радіо-кнопки */
-input[type="radio"]:checked + label::before {
-   background: url('../img/radio.svg') no-repeat center / 20px;
+input[type="radio"]:checked + label::after {
+   content: '';
+   position: absolute;
+   left: -37px; 
+   top: 60%;
+   transform: translateY(-50%) translateX(40%);
+   width: 10px; 
+   height: 10px;
+   border-radius: 50%;
+   background-color: #807D7E;
+   background-position: center;
 }
 
 
@@ -480,10 +490,10 @@ input[type="radio"]:checked + label::before {
    margin-bottom: 8px;
 }
 
-.delivery-form__label--before-flex{
+/* .delivery-form__label--before-flex{
    display: flex;
    column-gap: 19px;
-}
+} */
 .subtitle--method{
    color: #807D7E;
    font-weight: 500;
