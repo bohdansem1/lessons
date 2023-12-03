@@ -24,6 +24,10 @@
 }
 
 .footer{
+   padding: 20px;
+   background: #0E333D;
+   text-align: center;
+   color: #fff;
 }
 
 .page{
