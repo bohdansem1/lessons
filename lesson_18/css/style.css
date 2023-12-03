@@ -81,7 +81,7 @@
 }
 .menu__item:not(:first-child) .menu__link::after{
    content: "";
-   background: url(../img/menu-arrow.png) 0 0 no-repeat;
+   background: url(../img/menu-arrow.webp) 0 0 no-repeat;
    flex:0 0 16px;
    height: 8px;
    width: 16px;
@@ -376,7 +376,7 @@
 
 @media (min-width: 1490px){
    .hero{
-      background: url('../img/hero-bg-right.png') right bottom 55px no-repeat, url('../img/hero-bg-left.png') 35px bottom no-repeat, url('../img/line-left.png') left top no-repeat #502203;
+      background: url('../img/hero-bg-right.webp') right bottom 55px no-repeat, url('../img/hero-bg-left.webp') 35px bottom no-repeat, url('../img/line-left.webp') left top no-repeat #502203;
    }
 }
 .hero__title{
@@ -565,15 +565,21 @@
 
 .individual-btn__shop{
    color:#FFF;
-   padding: 17px 44px;
+   padding: 15px 42px;
    border-radius: 5px;
    background: #0E333D;
+   outline: 2px solid #0E333D;
+   transition: all 0.3s;
 }
+
+
 
 .individual-btn__video{
    text-decoration-line: underline;
    align-self: center;
+   transition: transform 0.3s;
 }
+
 
 @media(max-width: 960px){
    .individual__container{
@@ -600,5 +606,15 @@
 @media(max-width: 460px){
    .individual__title {
       font-size: 40px;
+   }
+}
+
+@media(any-hover: hover){
+   .individual-btn__shop:hover{
+      background: transparent;
+      color: #0E333D;
+   }
+   .individual-btn__video:hover{
+      transform: scale(1.05);
    }
 }
