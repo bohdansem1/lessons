@@ -297,6 +297,8 @@ header, footer{
    padding: 9px 24px;
    border: 1px solid #fff;
    border-radius: 4px;
+   position: relative;
+   transition: 0.3s ease-in-out;
 }
 /* .content__shop-now::before{
    content: "";
@@ -365,7 +367,7 @@ header, footer{
 
 .content__buttons{
    display: flex;
-   flex-direction: column;
+   flex-direction: column-reverse;
    gap: 40px;
    align-items: flex-start;
 }
@@ -385,6 +387,11 @@ header, footer{
 .content__buttons--big img{
    margin-left: 55px;
 }
+
+.content__arrow{
+   transition: transform 0.3s ease-in-out;
+}
+
 
 
 .section3--margin{
@@ -478,4 +485,13 @@ header, footer{
       font-size: 18px;
       margin-bottom: 15.5%; /* 40px/258 */
    }
+}
+
+@media(any-hover:hover){
+   .content__shop-now:hover{
+      background-color: #989898
+   }
+   .content__shop-now:hover ~ .content__arrow {
+      transform: translateY(10px)
+    }
 }
