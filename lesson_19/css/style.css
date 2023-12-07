@@ -261,6 +261,8 @@ header, footer{
    padding: 8px 16px;
    transform: translateX(50%);
    max-width: 104px;
+   margin-bottom: 20px;
+
 }
 
 
