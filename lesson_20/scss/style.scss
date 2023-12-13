@@ -148,8 +148,6 @@ body{
       }
    }
 
-   &__link {
-   }
 }
 .header {
 
@@ -378,8 +376,6 @@ body{
 .left-side {
    display: flex;
    flex-direction: column;
-   &__txt {
-   }
 
    &__picture {
       border-radius: 5px;
@@ -400,7 +396,7 @@ body{
       font-family: Inter;
       font-size: 28px;
       font-weight: 400;
-      margin-bottom: 13;
+      margin-bottom: 13px;
    }
 
    &__title {
@@ -511,15 +507,12 @@ body{
    background-image: url(../img/line-sec4.webp);
    background-repeat: no-repeat;
    background-position: right bottom 167px;
-   &__container {
-   }
 
    &__title {
       margin-bottom: 87px;
    }
 
-   &__cards {
-   }
+   
 }
 .title {
    text-align: center;
@@ -581,8 +574,6 @@ body{
       }
    }
 
-   &__price {
-   }
 }
 
 @media(max-width: 500px){
@@ -607,11 +598,6 @@ body{
    background-image: url("../img/hendrcafted-line.svg");
    background-repeat: no-repeat;
    background-position: left top 45px;
-   &__container {
-   }
-
-   &__text {
-   }
 
    &__cards-hendcrafted {
       display: grid;
@@ -625,16 +611,7 @@ body{
       margin-bottom: 49px;
    }
 }
-.wwd {
 
-   &__pretitle {
-   }
-
-   &__title {
-   }
-}
-.hendcrafted-cards {
-}
 .hendcrafted-card {
    &__pic {
       margin-bottom: 25px;
@@ -717,17 +694,11 @@ body{
    background-image: url("../img/section6-line.webp");
    background-repeat: no-repeat;
    background-position: right top;
-   &__content {
-
-   }
 }
 .content {
    display: grid;
    gap: 3.833333%; /* 46px/1200 */
    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
-   &__card-item {
-     
-   }
 }
 .card-item {
 
@@ -740,8 +711,6 @@ body{
       }
    }
 
-   &__info {
-   }
 }
 .info {
       display: flex;
@@ -779,8 +748,6 @@ body{
       }
    }
 
-   &__min-read {
-   }
 
    &__read-more {
       width: 80px;
@@ -816,15 +783,6 @@ body{
    border-top: 1px solid rgba(249, 249, 249, 0.22);
    text-align: center;
    padding-bottom: 42px;
-  
-   &__container {
-   }
-
-   &__contacts {
-   }
-
-   &__links {
-   }
 }
 .contacts {
    display: flex;
@@ -836,9 +794,6 @@ body{
    font-weight: 500;
    line-height: 1.4; /* 42px */
    margin-bottom: 50px;
-   &__phone {
-     
-   }
 
    &__mail {
       font-size: 40px;
@@ -900,25 +855,10 @@ body{
          font-size: 26px;
 		}
 
-		&__links {
-		}
    }
    .contacts {
-
-      &__phone {
-      }
-
       &__mail {
          font-size: 24px;
-      }
-
-      &__adress {
-      }
-
-      &__socials {
-      }
-
-      &__link {
       }
    }
 

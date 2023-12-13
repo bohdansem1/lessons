@@ -252,6 +252,7 @@ body {
 .menu__item--active a {
   text-decoration: underline;
 }
+
 .header__log-in {
   -ms-flex-negative: 0;
       flex-shrink: 0;
@@ -529,7 +530,7 @@ body {
   font-family: Inter;
   font-size: 28px;
   font-weight: 400;
-  margin-bottom: 13;
+  margin-bottom: 13px;
 }
 .wwd__title {
   color: #FFF;
@@ -617,6 +618,7 @@ body {
 .section-4__title {
   margin-bottom: 87px;
 }
+
 .title {
   text-align: center;
 }
@@ -676,6 +678,7 @@ body {
             transform: scale(1.05);
   }
 }
+
 @media (max-width: 500px) {
   .title {
     margin-bottom: 30px;
@@ -776,11 +779,13 @@ body {
   background-repeat: no-repeat;
   background-position: right top;
 }
+
 .content {
   display: grid;
   gap: 3.833333%; /* 46px/1200 */
   grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
 }
+
 .card-item__pic img {
   width: 100%;
   height: 100%;
@@ -788,6 +793,7 @@ body {
      object-fit: cover;
   aspect-ratio: 364/256;
 }
+
 .info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -859,6 +865,7 @@ body {
   text-align: center;
   padding-bottom: 42px;
 }
+
 .contacts {
   display: -webkit-box;
   display: -ms-flexbox;
