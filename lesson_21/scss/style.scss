@@ -437,6 +437,10 @@ $mainBlack: #3C4242;
       }
    }
 }
+.item
+.items__hidden-title{
+   display: none;
+}
 .arrival {
    &__items {
       color: $mainBlack;

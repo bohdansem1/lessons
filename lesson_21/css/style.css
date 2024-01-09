@@ -639,6 +639,10 @@ strong {
   }
 }
 
+.item .items__hidden-title {
+  display: none;
+}
+
 .arrival__items {
   color: #3C4242;
   font-family: Causten;
