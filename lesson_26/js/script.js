@@ -44,7 +44,7 @@ function removeColor(e){
 // Створити функцію яка будує інтервал який буде змінювати контент в елементі item виводячи цифру яка збільшується на одиницю: 1 2 3 ... і т.д.
 // Затримка між зміною числа, та до якого числа має працювати інтервал має задаватись в дата атрибутах елемента item.
 // Функція має запустатить коли ми доскролюємо до елементу item (його видно), і не запускатись повторно.
-
+function unosDosTres(){
   let options = {  //Об'єкт спостерігач і його налаштування
     root: null,
     rootMargin: "0px",
@@ -82,3 +82,6 @@ function removeColor(e){
   let observer = new IntersectionObserver(callback, options);
   observer.observe(target);
 
+}
+
+unosDosTres();
