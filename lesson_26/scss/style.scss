@@ -1,0 +1,82 @@
+@use "sass:math";
+@import "_reset.scss";
+@import "_fonts.scss";
+@import "_variables.scss";
+@import "_functions.scss"; 
+@import "_mixins.scss"; 
+// @import "_common.scss"; 
+// Мінімальна ширина сторінки
+$minWidth: 320;
+// Ширина полотна (макету)
+$maxWidth: 1920;
+// Ширина обмежуючого контейнера (0 = немає обмеження)
+$maxWidthContainer: 1170;
+// Загальний відступ у контейнера
+// (30 = по 15px ліворуч і праворуч, 0 = немає відступу)
+$containerPadding: 30;
+// Ширина спрацьовування першого брейкпоінту
+$containerWidth: $maxWidthContainer + $containerPadding;
+:root {
+	// --main-black: #37393F;
+	// --main-purple: #6B77E5;
+   // --main-white: #fff;
+   // --main-aqua: #40DDB6;
+}
+.wrapper{
+   overflow: clip;
+   display: flex;
+   flex-direction: column;
+   min-height: 100%;
+}
+
+.wrapper main {
+   flex-grow: 1   
+}
+
+
+[class*="__container"] {
+	max-width: 1200px; /* 1170 + 15 + 15 */
+	padding-left: 15px;
+	padding-right: 15px;
+	margin: 0 auto;
+}
+
+body{
+   opacity: 0;
+   font-size: toRem(22);
+}
+
+body.loaded{
+   opacity: 1;
+}
+header{
+   position: fixed;
+   width: 100%;
+   top: 0;
+}
+header, footer{
+   padding: toRem(10);
+   transition: 0.2s;
+   background-color: #9c9c9c;
+}
+main{
+   padding-top: toRem(50);
+
+}
+
+.item{
+   border: 1px solid #ffffff;
+   cursor: pointer;
+   background-color: #c3c3c3;
+}
+span.item{
+   display: block;
+   background-color: #c6fd00;
+   font-size: toRem(30);
+   height: toEm(40,30);
+}
+
+.footer-red{
+   background-color: red;
+}
+/*-----------------------HEADER-----------------  */

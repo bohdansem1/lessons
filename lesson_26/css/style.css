@@ -1,0 +1,143 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+html,
+body {
+  line-height: 1;
+  height: 100%;
+}
+
+/* FORM */
+input,
+button,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+button {
+  color: inherit;
+  background-color: transparent;
+}
+
+button,
+select,
+option {
+  cursor: pointer;
+}
+
+input[type=text],
+input[type=email],
+input[type=tel],
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.wrapper {
+  overflow: clip;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100%;
+}
+
+.wrapper main {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+[class*=__container] {
+  max-width: 1200px; /* 1170 + 15 + 15 */
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+body {
+  opacity: 0;
+  font-size: 1.375rem;
+}
+
+body.loaded {
+  opacity: 1;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+header, footer {
+  padding: 0.625rem;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  background-color: #9c9c9c;
+}
+
+main {
+  padding-top: 3.125rem;
+}
+
+.item {
+  border: 1px solid #ffffff;
+  cursor: pointer;
+  background-color: #c3c3c3;
+}
+
+span.item {
+  display: block;
+  background-color: #c6fd00;
+  font-size: 1.875rem;
+  height: 1.3333333333em;
+}
+
+.footer-red {
+  background-color: red;
+}
+
+/*-----------------------HEADER-----------------  */
