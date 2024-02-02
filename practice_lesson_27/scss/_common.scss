@@ -1,0 +1,219 @@
+.burger-menu{
+   flex: 0 0 30px;
+   height: 18px;
+   position: relative;
+   width: 30px;
+   display: none;
+   @media (max-width: toEm(991.98)){
+      display: block;
+   }
+   
+   span{
+      top: 50%;
+      margin-top: -1px;
+      height: 2px;
+      width: 100%;
+      position: absolute;
+      left: 0;
+      transition: transform .3s;
+      background-color: var(--main-black);
+    
+   }
+   &::after{
+      content: "";
+      position: absolute;
+      background-color: var(--main-black);
+      bottom: 0;
+      height: 2px;
+      width: 100%;
+      left: 0;
+      transition: transform .3s;
+   }
+   &::before{
+      content: "";
+      position: absolute;
+      left: 0;
+      background-color: var(--main-black);
+      top: 0;
+      height: 2px;
+      width: 100%;
+      transition: transform .3s;
+   }
+   .burger-open & {
+      span{
+         transform: scale(0);
+      }
+      &::before{
+         transform: rotate(-225deg);
+         top: 50%;
+         margin-top: -1px;
+      }
+      &::after{
+         transform: rotate(225deg);
+         bottom: 50%;
+         margin-bottom: -1px;
+      }
+   }
+}
+
+// Заголовки
+.title{
+   color: red;
+   color: $mainBlack;
+   font-family: "Core Sans C";
+   font-size: toRem(34);
+   @include adaptiveValue("font-size", 34, 24);
+   font-weight: 600;
+   line-height: 0.98;
+   letter-spacing: toEm(0.68);
+   display: flex;
+   align-items: flex-start;
+   column-gap: toEm(20, 34);
+   &::before{
+      content: '';
+      flex: 0 0 toRem(6);
+      width: 6px;
+      margin-top: toEm(3, 34);
+      background-color: $purple;
+      border-radius: toRem(10);
+      height: toEm(30, 34);
+   }
+}
+//Product preview card 
+.item-product {
+   position: relative;
+   display: grid;
+   gap: toRem(30);
+   &--category{
+      gap: toRem(25);
+   }
+   // .item-product__picture-link
+   &__picture-link {
+      display: block;
+   }
+   // .item-product__image
+   &__image {
+      aspect-ratio: 282/370;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: toRem(10);
+      .item-product--category & {
+         aspect-ratio: 270/393;
+      }
+   }
+   // .item-product__body
+   &__body {
+      display: grid;
+      grid-template: auto auto / 1fr auto;
+      gap: toRem(5);
+
+   }
+   // .item-product__title
+   &__title {
+      color: $mainBlack;
+      font-weight: 600;
+      min-width: 0;
+      .item-product--category & {
+         font-size: toRem(17);
+         font-weight: 700;
+      }
+
+   }
+   // .item-product__link-title
+   &__link-title {
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      display: block;
+   @media (any-hover:hover){
+       &:hover{
+         text-decoration: underline;
+      } 
+   }
+   }
+   // .item-product__label
+   &__label {
+      grid-row: 2 / 3;
+      font-size: toRem(14);
+      font-weight: 500;
+      color: $grey;
+   }
+   // .item-product__link
+   &__link, &__price {
+      grid-column: 2 / 3;
+      grid-row: span 2;
+   }
+   &__link{
+      display: flex;
+      align-items: center;
+   }
+
+   &__price{
+      border-radius: toRem(8);
+      background: #F6F6F6;
+      padding: toRem(10) toRem(20);
+      font-size: toRem(14);
+      font-weight: 700;
+      align-self: center;
+   }
+   &__favorite{
+      position: absolute;
+      top: toRem(26);
+      right: toRem(20);
+      width: toRem(32);
+      height: toRem(32);
+      border-radius: 50%;
+      background-color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: 0.3s;
+      @media (any-hover:hover){
+         &:hover{
+               transform: scale(1.05);
+               svg{
+                  transform: scale(1.2);
+                  fill: $purple;
+               } 
+            }
+         } 
+      svg{
+         transition: 0.3s;
+      }
+   }
+}
+
+// Button
+.button{
+   background-color: $purple;
+   padding: toRem(16) toRem(20);
+   font-size: toRem(18);
+   font-weight: 500;
+   color: #ffffff;
+   border-radius: toRem(8);
+   line-height: 1.222222222;
+   transition: 0.3s;
+   @media (any-hover:hover){
+      &:hover{
+         background: #6620C1;
+         box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.10);
+      } 
+      &:focus{
+         background: #6620C1;
+      }
+   }
+   &--white{
+      border-radius: 8px;
+      outline: 1px solid #3C4242;
+      background-color: #fff;
+      transition: 0.3s;
+      color: $mainBlack;
+      @media (any-hover:hover){
+          &:hover{
+            background-color: rgba(102, 32, 193, 0.03);
+            color: #fff;
+         } 
+      }
+   }
+}
